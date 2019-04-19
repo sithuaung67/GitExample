@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .nav li{
+            background: pink;
+            line-height: 40px;
+            text-align: center;
+            height: 40px;
+            width: 160px;
+        }
+        .nav li a{
+            display:block;
+            text-decoration: none;
+            color:blue;
+        }
+        .nav li a:hover{
+            background: peru;
+        }
+        .nav > li {
+            border-right: 1px solid blanchedalmond;
+            float: left;
+        }
+        .sub{
+            display: none;
+        }
+        .nav > li:hover .sub{
+            display: block;
+        }
+        .sub li{
+            border-top: 1px solid whitesmoke;
+        }
+        .nav,.sub{
+         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<ul class="nav">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+    <li>
+        <a href="#">Service &raquo;</a>
+        <ul class="sub">
+            <li><a href="#">Social Media</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">SEO</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Product</a></li>
+</ul>
+</body>
+</html>

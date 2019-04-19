@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List Element</title>
+</head>
+<style>
+    .Bar{
+        list-style: none;
+        margin: 0;
+        padding: 10px 10px 0 10px;
+        background: #b92c28;
+        color:whitesmoke;
+        overflow: hidden;
+
+    }
+    .Bar li {
+        padding:8px 20px;
+        cursor: pointer;
+        margin-right: 8px;
+        float: left;
+        background: black;
+    }
+    .panel{
+        padding:15px;
+        min-height: 200px;
+        border:1px solid wheat;
+        border-top: 0 none;
+    }
+    #TabTwo{
+        background: blue;
+    }
+    #panelTwo{
+        display:none;
+    }
+
+</style>
+<body>
+<ul class="Bar">
+    <li id="TabOne" onclick="TabOne()">Tab One</li>
+    <li id="TabTwo" onclick="TabTwo()">Tab Two</li>
+</ul>
+<div class="panel" id="panelOne">Panel1</div>
+<div class="panel" id="panelTwo">Panel2</div>
+<script>
+    function get(id) {
+        return document.getElementById(id);
+    }
+    function TabOne() {
+        get("TabOne").style.background="pink";
+        get("TabTwo").style.background="brown";
+        get("panelOne").style.display="block";
+        get("panelTwo").style.display="none";
+    }
+    function TabTwo() {
+        get("TabTwo").style.background="pink";
+        get("TabOne").style.background="brown";
+        get("panelTwo").style.display="block";
+        get("panelOne").style.display="none";
+    }
+</script>
+
+</body>
+</html>

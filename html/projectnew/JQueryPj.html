@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery</title>
+</head>
+<body>
+
+<p>Hello World</p>
+<button>Button</button>
+<a href="#">Link Button</a>
+<script src="bootstrap/js/jQuery.js"></script>
+<script>
+    $("button").click(function () {
+        $('p').html("Hello JQuery");
+        $('p').css("color","red");
+        $('p').css("background","yellow");
+    });
+    $('a').click(function () {
+       $('p').toggle('slow');
+    });
+</script>
+
+</body>
+</html>

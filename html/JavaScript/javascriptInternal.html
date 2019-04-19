@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Internal JavaScript</title>a
+</head>
+<body>
+<h1 id="cu">Internal Example</h1>
+<button type="button" onclick="me()">Click me</button>
+<br>
+<button type="button" onclick="her()">Clear</button>
+
+<h1 id="show">Show text here</h1>
+<input type="text" id="name" placeholder="Enter Name"required><br>
+<button type="button" onclick="getName()">Click Here</button>
+<script>
+    function getName() {
+        console.log("my console is working");
+        var name=document.getElementById('name').value;
+        var show=document.getElementById('show');
+        show.innerHTML=name;
+    }
+    function me() {
+        console.log("you answer is very well");
+        var myId=document.getElementById('cu');
+        myId.innerHTML="You complete job";
+    }
+    function her() {
+        console.log("you complete well play");
+        var herId=document.getElementById("cu");
+        herId.innerHTML="you can do this job";
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+.navBar{
+    width:100%;
+    height:50px;
+    background-color: brown;
+}
+.nav, .sub{
+    padding:0;
+    margin: 0;
+}
+.nav li {
+    width:150px;
+    height: 100%;
+    background-color: brown;
+    text-align: center;
+    float:left;
+    line-height:50px;
+    list-style: none;
+    border-right: 1px solid;
+
+}
+.nav li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+
+}
+.sub li{
+    border-top: 1px solid;
+}
+.nav li:hover {
+    background: saddlebrown;
+}
+.sub li{
+    display:none;
+}
+.nav >li:hover .sub li{
+    display: block;
+}
+
+
+

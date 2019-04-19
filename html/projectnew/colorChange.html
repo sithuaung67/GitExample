@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color Change</title>
+</head>
+<style>
+    .wrap{
+        width: 800px;
+        margin:20px auto;
+        position: relative;
+    }
+    .box{
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+        color:whitesmoke;
+        font-size: 21px;
+    }
+    #box1{
+        background: green;
+    }
+    #box2{
+        background: blue;
+        display: none;
+    }
+    #box3{
+        background: red;
+        display: none;
+    }
+    .wrap button{
+        position: absolute;
+        top: 45%;
+    }
+    #prev{
+        left:10px;
+    }
+    #next{
+        right:10px;
+    }
+</style>
+<body>
+<div class="wrap">
+    <button onclick="prev()" id="prev">&laquo;</button>
+    <button onclick="next()" id="next">&raquo;</button>
+    <div class="box" id="box1">One</div>
+    <div class="box" id="box2">Two</div>
+    <div class="box" id="box3">Three</div>
+</div>
+<script>
+    var box=1;
+    setInterval(next,2000);
+    function prev() {
+        document.getElementById("box" + box ).style.display="none";
+        box--;
+        if (box < 1) box=3;
+        document.getElementById("box" + box ).style.display="block";
+
+    }
+    function next() {
+        document.getElementById("box" + box ).style.display="none";
+        box++;
+        if (box >3) box=1;
+        document.getElementById("box" + box ).style.display="block";
+
+    }
+</script>
+
+</body>
+</html>

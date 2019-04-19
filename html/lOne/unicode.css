@@ -1,0 +1,27 @@
+
+@font-face {
+    font-family: myUnicode;
+    src: url("mm3.ttf");}
+
+@font-face {
+    font-family: myZg;
+    src: url("zg.ttf");
+}
+
+.container{
+    border-radius: 50px;
+    font-family: myUnicode;
+    width: 400px;
+    background: grey;
+    margin: 20px auto;
+    padding: 20px       ;
+
+}
+
+.container h1 {
+    border-radius: 20px;
+    color: orange;
+    background: #1c699d;
+    text-align: center;
+}
+

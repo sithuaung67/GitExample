@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <p id="note">Hello World</p>
+    <button onclick="ChangeNote()">change</button>
+
+<script>
+    function ChangeNote() {
+        var note=document.getElementById('note');
+        note.innerHTML="Hello Javascript";
+        note.style.color='brown';
+        note.style.background="blue";
+        note.style.textAlign="center";
+
+    }
+</script>
+
+</body>
+</html>

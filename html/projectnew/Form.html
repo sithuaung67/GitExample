@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <style>
+        label{
+            display: block;
+            color: #555555;
+        }
+        label.error {
+            color:#900;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<form id="comment" action="">
+    <p>
+        <label for="cname" >Name(required,at least 2 characters)</label>
+        <input id="cname" type="text" name="name">
+    </p>
+    <p>
+        <label for="cemail" >Email(required)</label>
+        <input id="cemail" type="text" name="email"/>
+    </p>
+    <p>
+        <label for="curl" >URL(optional)</label>
+        <input id="curl" type="text" name="url" />
+    </p>
+    <p>
+        <label for="ccomment" >Your comment(required)</label>
+        <textarea id="ccomment" name="comment"></textarea>
+    </p>
+    <p>
+        <input class="submit" type="submit" value="Submit" />
+    </p>
+</form>
+<script src="bootstrap/js/jQuery.js"></script>
+<script src="bootstrap/validate/jquery.validate.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#comment").validate({
+            rules:{
+             name:{
+                 "required":true,
+                 "minlength":2
+             },
+             email:{
+                 "required":true,
+                "email":true
+
+        },
+                comment:{
+                 "required":true
+                }
+            }
+
+        });
+    });
+</script>
+</body>
+</html>

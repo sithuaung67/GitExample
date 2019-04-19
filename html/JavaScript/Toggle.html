@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+
+<body>
+<button type="button" id="btn1">Show</button>
+<button type="button" id="btn2">Hide</button>
+<button type="button" id="btn3">Toggle</button>
+<button type="button" id="btn4">FadeOut</button>
+<button type="button" id="btn5">FadeIn</button>
+<div class="circle">Circle</div>
+<script src="jquery.js"></script>
+<script>
+    var circle=$(".circle");
+    circle.css({
+        margin:"50px auto",
+        width:"300px",
+        height:"300px",
+        lineHeight:"300px",
+        borderRadius:"300px",
+        backgroundColor:"darkRed",
+        textAlign:"center",
+
+    });
+    var btn1=$("#btn1");
+    btn1.click(function () {
+        console.log("Working");
+        circle.show("slow");
+    });
+    var btn2=$("#btn2");
+    btn2.click(function () {
+        console.log("Working");
+        circle.hide("slow");
+    });
+    var btn3=$("#btn3");
+    btn3.click(function () {
+        console.log("Working");
+        circle.fadeToggle("slow");
+    });
+    var btn4=$("#btn4");
+    btn4.click(function () {
+        console.log("Working");
+        circle.fadeOut("slow");
+    });
+    var btn5=$("#btn5");
+    btn5.click(function () {
+        console.log("Working");
+        circle.fadeIn("slow");
+    });
+
+
+</script>
+
+</body>
+</html>

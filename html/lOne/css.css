@@ -1,0 +1,44 @@
+h1{
+    color:blue;
+    background-color: black;
+    font-size:60px;
+    text-align:center;
+    padding:10px;
+    margin:10px;
+
+}
+p{
+    background-color:chartreuse;
+    color:red;
+    font-size: 50px;
+
+}
+body{
+    background-color: gray;
+}
+.aa{
+    color:darkblue;
+}
+a{
+  display:block;
+    text-decoration: none;
+    line-height: 40px;
+    font-size: 40px;
+    text-align: center;
+    background-color:black;
+    width:150px;
+    border-dotted: 50px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
